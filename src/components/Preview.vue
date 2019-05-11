@@ -4,10 +4,6 @@
       class="content"
       :class="device"
     >
-      <iframe
-        id="iframe"
-        srcdoc="<p>This text will appear in the iframe!</p>"
-      ></iframe>
     </div>
   </div>
 </template>

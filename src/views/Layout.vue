@@ -31,7 +31,7 @@ export default {
   width: 100%;
   height: 100vh;
   display: grid;
-  grid-template-columns: 80px 345px 1fr 0px;
+  grid-template-columns: 60px 345px 1fr 0px;
   grid-template-rows: 40px auto 0px;
   grid-gap: 40px;
 }

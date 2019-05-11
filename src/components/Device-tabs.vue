@@ -40,7 +40,7 @@ export default {
 <style scoped>
 .device > img {
   height: 40px;
-  margin: 20px 40px 0;
+  margin: 20px 30px 0;
   cursor: pointer;
   opacity: 0.5;
   transition: all ease 0.3s;
