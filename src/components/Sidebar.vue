@@ -104,6 +104,9 @@ export default {
   opacity: 0.3;
   transition: all ease 0.3s;
 }
+.wrapper-icons > img:hover {
+  opacity: 1;
+}
 .opacity {
   opacity: 1 !important;
 }

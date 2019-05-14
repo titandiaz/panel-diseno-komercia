@@ -12,7 +12,7 @@
 
 <script>
 import Sidebar from "@/components/Sidebar";
-import Settings from "@/components/Settings-box";
+import Settings from "@/components/Settings-box2";
 import Preview from "@/components/Preview";
 import Device from "@/components/Device-tabs";
 export default {
