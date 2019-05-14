@@ -1,0 +1,50 @@
+.el-color-picker__trigger {
+  border: 0;
+  border-radius: 50%;
+}
+.el-color-picker__color-inner {
+  border-radius: 50%;
+}
+.el-color-picker__color {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 12px 2px rgba(1, 28, 44, 0.15);
+}
+.el-color-svpanel {
+  width: 90%;
+}
+.el-color-picker__panel {
+  /* box-sizing: border-box; */
+  width: 200px;
+  padding: 12px;
+  border-radius: 10px;
+}
+.el-button--default {
+  background-color: #4a59f5;
+  color: #fff;
+  border: 0;
+  border-radius: 23px;
+  box-shadow: 0 1px 4px 2px hsla(236, 26%, 68%, 0.376);
+  margin-top: 10px;
+  font-weight: 400;
+}
+.el-color-svpanel__cursor > div {
+  width: 8px;
+  height: 8px;
+  border: 2px solid #fff;
+  box-sizing: content-box;
+  box-shadow: 0 0 0 0 #000;
+}
+.el-input--mini .el-input__inner {
+  width: 180px;
+}
+.el-tooltip__popper {
+  font-size: 12px;
+  font-family: Helvetica, sans-serif;
+}
+.el-tooltip__popper.is-dark {
+  background-color: #02073b;
+}
+.el-tooltip__popper[x-placement^='right'] .popper__arrow {
+  border-right-color: #02073b;
+}

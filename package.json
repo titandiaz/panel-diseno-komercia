@@ -11,11 +11,10 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "element-ui": "^2.8.2",
     "isotope-layout": "^3.0.6",
-    "lodash": "^4.17.11",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
-    "vueisotope": "^3.1.2",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
@@ -29,6 +28,7 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
+    "babel-plugin-component": "^1.1.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "vue-template-compiler": "^2.5.21"

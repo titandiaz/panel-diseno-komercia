@@ -29,7 +29,6 @@ export default {
   },
   watch: {
     indexDevice(value) {
-      console.log(value);
       if (value == 1) {
         this.device = "small";
       } else if (value == 2) {

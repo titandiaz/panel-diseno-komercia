@@ -14,7 +14,23 @@
           v-show="item.name == 'Colores'"
           class="colors"
         >
-          <div
+          <el-color-picker
+            v-model="item.titleColor"
+            size="small"
+          ></el-color-picker>
+          <el-color-picker
+            v-model="item.textColor"
+            size="small"
+          ></el-color-picker>
+          <el-color-picker
+            v-model="item.btnColor"
+            size="small"
+          ></el-color-picker>
+          <el-color-picker
+            v-model="item.textBtnColor"
+            size="small"
+          ></el-color-picker>
+          <!-- <div
             :style="`background-color: ${item.titleColor}`"
             class="color"
           ></div>
@@ -29,7 +45,7 @@
           <div
             :style="`background-color: ${item.textBtnColor}`"
             class="color"
-          ></div>
+          ></div> -->
         </div>
       </div>
     </div>
@@ -41,6 +57,7 @@ export default {
   props: ["height"],
   data() {
     return {
+      color: "#1f0f61",
       options: [
         {
           name: "Colores",
@@ -74,7 +91,8 @@ export default {
           source:
             "https://www.fotojet.com/template-imgs-thumb/design/facebook-cover/travel-city-2.jpg"
         }
-      ]
+      ],
+      properties: [{}]
     };
   }
 };
@@ -92,11 +110,12 @@ export default {
 .content > span {
   font-size: 14px;
   font-weight: 600;
-  color: rgb(3, 23, 41);
+  color: #0b223a;
   flex: 1.2;
 }
 .content {
   display: flex;
+  align-items: center;
 }
 .colors {
   display: flex;

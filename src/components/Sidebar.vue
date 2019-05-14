@@ -6,13 +6,20 @@
       class="icon-komercia"
     >
     <div class="wrapper-icons">
-      <img
+      <el-tooltip
         v-for="(icon, index) in icons"
         :key="index"
-        :src="icon.icon"
-        @click="selectType(index + 1)"
-        :class="indexType == (index + 1) ? 'opacity' : ''"
+        class="item"
+        effect="dark"
+        :content="icon.name"
+        placement="right"
       >
+        <img
+          :src="icon.icon"
+          @click="selectType(index + 1)"
+          :class="indexType == (index + 1) ? 'opacity' : ''"
+        >
+      </el-tooltip>
     </div>
     <img
       src="../assets/Icons/Setting2x.png"
@@ -28,30 +35,37 @@ export default {
     return {
       icons: [
         {
+          name: "Menu",
           icon: require("../assets/Icons/Header2x.png"),
           redirect: ""
         },
         {
+          name: "Banner",
           icon: require("../assets/Icons/Banner2x.png"),
           redirect: ""
         },
         {
+          name: "Contenido",
           icon: require("../assets/Icons/Grid2x.png"),
           redirect: ""
         },
         {
+          name: "Separador",
           icon: require("../assets/Icons/Separator2x.png"),
           redirect: ""
         },
         {
+          name: "Video",
           icon: require("../assets/Icons/Video2x.png"),
           redirect: ""
         },
         {
+          name: "Footer",
           icon: require("../assets/Icons/Footer2x.png"),
           redirect: ""
         },
         {
+          name: "Contacto",
           icon: require("../assets/Icons/Contact2x.png"),
           redirect: ""
         }
@@ -109,5 +123,10 @@ export default {
 }
 .opacity {
   opacity: 1 !important;
+}
+.right {
+  float: right;
+  width: 110px;
+  font-size: 18px;
 }
 </style>
