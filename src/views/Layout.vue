@@ -16,6 +16,9 @@ import Settings from "@/components/Settings-box2";
 import Preview from "@/components/Preview";
 import Device from "@/components/Device-tabs";
 export default {
+  created() {
+    this.$store.dispatch("GET_LOGIN")
+  },
   components: {
     Sidebar,
     Settings,

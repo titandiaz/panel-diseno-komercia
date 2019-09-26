@@ -90,7 +90,6 @@
           action="https://jsonplaceholder.typicode.com/posts/"
           :on-preview="handlePreview"
           :on-remove="handleRemove"
-          :file-list="item.source"
           list-type="picture"
         >
           <el-button
@@ -179,8 +178,8 @@ export default {
     };
   },
   methods: {
-    handleRemove(file, fileList) {
-      console.log(file, fileList);
+    handleRemove(file) {
+      console.log(file);
     },
     handlePreview(file) {
       console.log(file);
